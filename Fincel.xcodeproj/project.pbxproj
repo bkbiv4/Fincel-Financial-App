@@ -13,7 +13,40 @@
 		FD793EB7285EB003005CD4FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD793EB6285EB003005CD4FC /* Preview Assets.xcassets */; };
 		FD793EB9285EB003005CD4FC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD793EB8285EB003005CD4FC /* Persistence.swift */; };
 		FD793EBC285EB003005CD4FC /* Fincel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD793EBA285EB003005CD4FC /* Fincel.xcdatamodeld */; };
+		FD793EC3285EBB81005CD4FC /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD793EC2285EBB81005CD4FC /* DashboardView.swift */; };
+		FD793EC5285EC3FD005CD4FC /* Colors+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD793EC4285EC3FD005CD4FC /* Colors+.swift */; };
+		FD793ECE285EE973005CD4FC /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD793ECD285EE973005CD4FC /* WidgetKit.framework */; };
+		FD793ED0285EE973005CD4FC /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD793ECF285EE973005CD4FC /* SwiftUI.framework */; };
+		FD793ED3285EE973005CD4FC /* Fincel_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD793ED2285EE973005CD4FC /* Fincel_Widget.swift */; };
+		FD793ED6285EE975005CD4FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD793ED5285EE975005CD4FC /* Assets.xcassets */; };
+		FD793ED8285EE975005CD4FC /* Fincel_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = FD793ED4285EE973005CD4FC /* Fincel_Widget.intentdefinition */; };
+		FD793ED9285EE975005CD4FC /* Fincel_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = FD793ED4285EE973005CD4FC /* Fincel_Widget.intentdefinition */; };
+		FD793EDC285EE975005CD4FC /* Fincel WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FD793ECB285EE973005CD4FC /* Fincel WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD793EDA285EE975005CD4FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD793EA4285EAFFF005CD4FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD793ECA285EE973005CD4FC;
+			remoteInfo = "Fincel WidgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FD793EE0285EE975005CD4FC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FD793EDC285EE975005CD4FC /* Fincel WidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FD793EAC285EAFFF005CD4FC /* Fincel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fincel.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,6 +56,16 @@
 		FD793EB6285EB003005CD4FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FD793EB8285EB003005CD4FC /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		FD793EBB285EB003005CD4FC /* Fincel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fincel.xcdatamodel; sourceTree = "<group>"; };
+		FD793EC2285EBB81005CD4FC /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		FD793EC4285EC3FD005CD4FC /* Colors+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+.swift"; sourceTree = "<group>"; };
+		FD793EC6285EE88A005CD4FC /* Fincel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fincel.entitlements; sourceTree = "<group>"; };
+		FD793ECB285EE973005CD4FC /* Fincel WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Fincel WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD793ECD285EE973005CD4FC /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		FD793ECF285EE973005CD4FC /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		FD793ED2285EE973005CD4FC /* Fincel_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fincel_Widget.swift; sourceTree = "<group>"; };
+		FD793ED4285EE973005CD4FC /* Fincel_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Fincel_Widget.intentdefinition; sourceTree = "<group>"; };
+		FD793ED5285EE975005CD4FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD793ED7285EE975005CD4FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +76,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FD793EC8285EE973005CD4FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD793ED0285EE973005CD4FC /* SwiftUI.framework in Frameworks */,
+				FD793ECE285EE973005CD4FC /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -40,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				FD793EAE285EAFFF005CD4FC /* Fincel */,
+				FD793ED1285EE973005CD4FC /* Fincel Widget */,
+				FD793ECC285EE973005CD4FC /* Frameworks */,
 				FD793EAD285EAFFF005CD4FC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				FD793EAC285EAFFF005CD4FC /* Fincel.app */,
+				FD793ECB285EE973005CD4FC /* Fincel WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,12 +110,15 @@
 		FD793EAE285EAFFF005CD4FC /* Fincel */ = {
 			isa = PBXGroup;
 			children = (
+				FD793EC6285EE88A005CD4FC /* Fincel.entitlements */,
+				FD793EC4285EC3FD005CD4FC /* Colors+.swift */,
 				FD793EAF285EAFFF005CD4FC /* FincelApp.swift */,
 				FD793EB1285EAFFF005CD4FC /* ContentView.swift */,
 				FD793EB3285EB003005CD4FC /* Assets.xcassets */,
 				FD793EB8285EB003005CD4FC /* Persistence.swift */,
 				FD793EBA285EB003005CD4FC /* Fincel.xcdatamodeld */,
 				FD793EB5285EB003005CD4FC /* Preview Content */,
+				FD793EC2285EBB81005CD4FC /* DashboardView.swift */,
 			);
 			path = Fincel;
 			sourceTree = "<group>";
@@ -73,6 +131,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		FD793ECC285EE973005CD4FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD793ECD285EE973005CD4FC /* WidgetKit.framework */,
+				FD793ECF285EE973005CD4FC /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD793ED1285EE973005CD4FC /* Fincel Widget */ = {
+			isa = PBXGroup;
+			children = (
+				FD793ED2285EE973005CD4FC /* Fincel_Widget.swift */,
+				FD793ED4285EE973005CD4FC /* Fincel_Widget.intentdefinition */,
+				FD793ED5285EE975005CD4FC /* Assets.xcassets */,
+				FD793ED7285EE975005CD4FC /* Info.plist */,
+			);
+			path = "Fincel Widget";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,15 +161,34 @@
 				FD793EA8285EAFFF005CD4FC /* Sources */,
 				FD793EA9285EAFFF005CD4FC /* Frameworks */,
 				FD793EAA285EAFFF005CD4FC /* Resources */,
+				FD793EE0285EE975005CD4FC /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FD793EDB285EE975005CD4FC /* PBXTargetDependency */,
 			);
 			name = Fincel;
 			productName = Fincel;
 			productReference = FD793EAC285EAFFF005CD4FC /* Fincel.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FD793ECA285EE973005CD4FC /* Fincel WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD793EDD285EE975005CD4FC /* Build configuration list for PBXNativeTarget "Fincel WidgetExtension" */;
+			buildPhases = (
+				FD793EC7285EE973005CD4FC /* Sources */,
+				FD793EC8285EE973005CD4FC /* Frameworks */,
+				FD793EC9285EE973005CD4FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fincel WidgetExtension";
+			productName = "Fincel WidgetExtension";
+			productReference = FD793ECB285EE973005CD4FC /* Fincel WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -104,6 +201,9 @@
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					FD793EAB285EAFFF005CD4FC = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					FD793ECA285EE973005CD4FC = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
@@ -122,6 +222,7 @@
 			projectRoot = "";
 			targets = (
 				FD793EAB285EAFFF005CD4FC /* Fincel */,
+				FD793ECA285EE973005CD4FC /* Fincel WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -136,6 +237,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FD793EC9285EE973005CD4FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD793ED6285EE975005CD4FC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -145,12 +254,32 @@
 			files = (
 				FD793EBC285EB003005CD4FC /* Fincel.xcdatamodeld in Sources */,
 				FD793EB9285EB003005CD4FC /* Persistence.swift in Sources */,
+				FD793EC3285EBB81005CD4FC /* DashboardView.swift in Sources */,
+				FD793EC5285EC3FD005CD4FC /* Colors+.swift in Sources */,
 				FD793EB2285EAFFF005CD4FC /* ContentView.swift in Sources */,
 				FD793EB0285EAFFF005CD4FC /* FincelApp.swift in Sources */,
+				FD793ED9285EE975005CD4FC /* Fincel_Widget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD793EC7285EE973005CD4FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD793ED3285EE973005CD4FC /* Fincel_Widget.swift in Sources */,
+				FD793ED8285EE975005CD4FC /* Fincel_Widget.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD793EDB285EE975005CD4FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD793ECA285EE973005CD4FC /* Fincel WidgetExtension */;
+			targetProxy = FD793EDA285EE975005CD4FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		FD793EBD285EB003005CD4FC /* Debug */ = {
@@ -270,8 +399,10 @@
 		FD793EC0285EB003005CD4FC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Fincel/Fincel.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Fincel/Preview Content\"";
@@ -299,8 +430,10 @@
 		FD793EC1285EB003005CD4FC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Fincel/Fincel.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Fincel/Preview Content\"";
@@ -325,6 +458,60 @@
 			};
 			name = Release;
 		};
+		FD793EDE285EE975005CD4FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 78MD3W4L78;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Fincel Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Fincel Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bzardinc.Fincel.Fincel-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD793EDF285EE975005CD4FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 78MD3W4L78;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Fincel Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Fincel Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bzardinc.Fincel.Fincel-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -342,6 +529,15 @@
 			buildConfigurations = (
 				FD793EC0285EB003005CD4FC /* Debug */,
 				FD793EC1285EB003005CD4FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD793EDD285EE975005CD4FC /* Build configuration list for PBXNativeTarget "Fincel WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD793EDE285EE975005CD4FC /* Debug */,
+				FD793EDF285EE975005CD4FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
