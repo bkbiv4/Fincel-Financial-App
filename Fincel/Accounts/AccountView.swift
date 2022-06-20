@@ -32,9 +32,13 @@ struct AccountView: View {
                         }
                 )
             }
+            .navigationViewStyle(.stack)
             
             if showCreateAccontView {
                 CreateAccountView()
+                    .frame(height: UIScreen.main.bounds.height * 0.5)
+                    .transition(.move(edge: .bottom))
+                    .animation(.easeInOut)
             }
         }
     }

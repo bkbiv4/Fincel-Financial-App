@@ -66,7 +66,6 @@
 		FD793ED4285EE973005CD4FC /* Fincel_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Fincel_Widget.intentdefinition; sourceTree = "<group>"; };
 		FD793ED5285EE975005CD4FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD793ED7285EE975005CD4FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FD793EE1285FD099005CD4FC /* Fincel WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Fincel WidgetExtension.entitlements"; sourceTree = "<group>"; };
 		FD793EE3285FEB7B005CD4FC /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
 		FD793EE52860178D005CD4FC /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,7 +93,6 @@
 		FD793EA3285EAFFF005CD4FC = {
 			isa = PBXGroup;
 			children = (
-				FD793EE1285FD099005CD4FC /* Fincel WidgetExtension.entitlements */,
 				FD793EAE285EAFFF005CD4FC /* Fincel */,
 				FD793ED1285EE973005CD4FC /* Fincel Widget */,
 				FD793ECC285EE973005CD4FC /* Frameworks */,
@@ -114,6 +112,7 @@
 		FD793EAE285EAFFF005CD4FC /* Fincel */ = {
 			isa = PBXGroup;
 			children = (
+				FD793ED4285EE973005CD4FC /* Fincel_Widget.intentdefinition */,
 				FD793EC2285EBB81005CD4FC /* DashboardView.swift */,
 				FD793EE2285FEB5F005CD4FC /* Accounts */,
 				FD793EC6285EE88A005CD4FC /* Fincel.entitlements */,
@@ -148,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				FD793ED2285EE973005CD4FC /* Fincel_Widget.swift */,
-				FD793ED4285EE973005CD4FC /* Fincel_Widget.intentdefinition */,
 				FD793ED5285EE975005CD4FC /* Assets.xcassets */,
 				FD793ED7285EE975005CD4FC /* Info.plist */,
 			);
