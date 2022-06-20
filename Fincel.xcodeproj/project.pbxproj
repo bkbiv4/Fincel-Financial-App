@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FD793EB0285EAFFF005CD4FC /* FincelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD793EAF285EAFFF005CD4FC /* FincelApp.swift */; };
-		FD793EB2285EAFFF005CD4FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD793EB1285EAFFF005CD4FC /* ContentView.swift */; };
 		FD793EB4285EB003005CD4FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD793EB3285EB003005CD4FC /* Assets.xcassets */; };
 		FD793EB7285EB003005CD4FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD793EB6285EB003005CD4FC /* Preview Assets.xcassets */; };
 		FD793EB9285EB003005CD4FC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD793EB8285EB003005CD4FC /* Persistence.swift */; };
@@ -52,7 +51,6 @@
 /* Begin PBXFileReference section */
 		FD793EAC285EAFFF005CD4FC /* Fincel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fincel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD793EAF285EAFFF005CD4FC /* FincelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FincelApp.swift; sourceTree = "<group>"; };
-		FD793EB1285EAFFF005CD4FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FD793EB3285EB003005CD4FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD793EB6285EB003005CD4FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FD793EB8285EB003005CD4FC /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -114,16 +112,15 @@
 		FD793EAE285EAFFF005CD4FC /* Fincel */ = {
 			isa = PBXGroup;
 			children = (
+				FD793EC2285EBB81005CD4FC /* DashboardView.swift */,
 				FD793EE2285FEB5F005CD4FC /* Accounts */,
 				FD793EC6285EE88A005CD4FC /* Fincel.entitlements */,
 				FD793EC4285EC3FD005CD4FC /* Colors+.swift */,
 				FD793EAF285EAFFF005CD4FC /* FincelApp.swift */,
-				FD793EB1285EAFFF005CD4FC /* ContentView.swift */,
 				FD793EB3285EB003005CD4FC /* Assets.xcassets */,
 				FD793EB8285EB003005CD4FC /* Persistence.swift */,
 				FD793EBA285EB003005CD4FC /* Fincel.xcdatamodeld */,
 				FD793EB5285EB003005CD4FC /* Preview Content */,
-				FD793EC2285EBB81005CD4FC /* DashboardView.swift */,
 			);
 			path = Fincel;
 			sourceTree = "<group>";
@@ -269,7 +266,6 @@
 				FD793EB9285EB003005CD4FC /* Persistence.swift in Sources */,
 				FD793EC3285EBB81005CD4FC /* DashboardView.swift in Sources */,
 				FD793EC5285EC3FD005CD4FC /* Colors+.swift in Sources */,
-				FD793EB2285EAFFF005CD4FC /* ContentView.swift in Sources */,
 				FD793EB0285EAFFF005CD4FC /* FincelApp.swift in Sources */,
 				FD793EE4285FEB7B005CD4FC /* CreateAccountView.swift in Sources */,
 				FD793ED9285EE975005CD4FC /* Fincel_Widget.intentdefinition in Sources */,
