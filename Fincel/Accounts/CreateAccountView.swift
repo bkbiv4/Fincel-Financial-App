@@ -23,6 +23,7 @@ struct CreateAccountView: View {
     
     var body: some View {
         NavigationView {
+            
             ZStack(alignment: .bottom) {
                 VStack (spacing: 25) {
                     HStack () {
@@ -67,6 +68,7 @@ struct CreateAccountView: View {
                 )
             }
             .edgesIgnoringSafeArea(.bottom)
+            
         }
         .navigationViewStyle(.stack)
         .cornerRadius(10)
@@ -92,6 +94,7 @@ struct CreateAccountView: View {
         
         
         print("Saving The New Account", newAccount)
+        presentationMode.wrappedValue.dismiss()
         
         
     }

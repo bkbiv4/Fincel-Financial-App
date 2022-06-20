@@ -11,7 +11,7 @@ struct AccountView: View {
     
     @Environment(\.managedObjectContext) private var viewContext
     
-    @FetchRequest(entity: Account.entity(), sortDescriptors: [])
+    @FetchRequest(entity: Account.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Account.accountName, ascending: true)])
     private var accounts: FetchedResults<Account>
     
     @State var showCreateAccontView: Bool = false
@@ -21,26 +21,24 @@ struct AccountView: View {
             NavigationView {
                 List {
                     ForEach(accounts) { account in
-                        Text("Account: \(account.accountName!)")
+                        Text(account.accountName!)
                     }
                 }
                 .navigationTitle("Accounts")
-                .navigationBarItems(
-                    trailing:
-                        Button("Add") {
-                            showCreateAccontView.toggle()
-                        }
-                )
+                .navigationBarItems(trailing: Button("Add") { showCreateAccontView.toggle() } )
             }
             .navigationViewStyle(.stack)
             
-            if showCreateAccontView {
-                CreateAccountView()
-                    .frame(height: UIScreen.main.bounds.height * 0.5)
-                    .transition(.move(edge: .bottom))
-                    .animation(.easeInOut)
-            }
+//            if showCreateAccontView {
+//                CreateAccountView()
+//                    .frame(height: UIScreen.main.bounds.height * 0.5)
+//                    .transition(.move(edge: .bottom))
+//                    .animation(.easeInOut)
         }
+        .sheet(isPresented: $showCreateAccontView) {
+            CreateAccountView()
+        }
+            
     }
     
     
