@@ -12,10 +12,7 @@ struct CreateAccountView: View {
     
     @Environment(\.managedObjectContext) private var viewContext
     
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Account.accountName, ascending: true)],
-        animation: .default)
-    private var accounts: FetchedResults<Account>
+    @FetchRequest(entity: Account.entity(), sortDescriptors: []) private var accounts: FetchedResults<Account>
     
     @State var accountNameTextField: String = ""
     @State var accountType: String = ""

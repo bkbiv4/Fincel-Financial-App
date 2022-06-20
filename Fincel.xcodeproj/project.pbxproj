@@ -10,7 +10,7 @@
 		FD793EB0285EAFFF005CD4FC /* FincelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD793EAF285EAFFF005CD4FC /* FincelApp.swift */; };
 		FD793EB4285EB003005CD4FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD793EB3285EB003005CD4FC /* Assets.xcassets */; };
 		FD793EB7285EB003005CD4FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD793EB6285EB003005CD4FC /* Preview Assets.xcassets */; };
-		FD793EB9285EB003005CD4FC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD793EB8285EB003005CD4FC /* Persistence.swift */; };
+		FD793EB9285EB003005CD4FC /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD793EB8285EB003005CD4FC /* CoreDataManager.swift */; };
 		FD793EBC285EB003005CD4FC /* Fincel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD793EBA285EB003005CD4FC /* Fincel.xcdatamodeld */; };
 		FD793EC3285EBB81005CD4FC /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD793EC2285EBB81005CD4FC /* DashboardView.swift */; };
 		FD793EC5285EC3FD005CD4FC /* Colors+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD793EC4285EC3FD005CD4FC /* Colors+.swift */; };
@@ -53,7 +53,7 @@
 		FD793EAF285EAFFF005CD4FC /* FincelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FincelApp.swift; sourceTree = "<group>"; };
 		FD793EB3285EB003005CD4FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD793EB6285EB003005CD4FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FD793EB8285EB003005CD4FC /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		FD793EB8285EB003005CD4FC /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		FD793EBB285EB003005CD4FC /* Fincel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fincel.xcdatamodel; sourceTree = "<group>"; };
 		FD793EC2285EBB81005CD4FC /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		FD793EC4285EC3FD005CD4FC /* Colors+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+.swift"; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 				FD793EC4285EC3FD005CD4FC /* Colors+.swift */,
 				FD793EAF285EAFFF005CD4FC /* FincelApp.swift */,
 				FD793EB3285EB003005CD4FC /* Assets.xcassets */,
-				FD793EB8285EB003005CD4FC /* Persistence.swift */,
+				FD793EB8285EB003005CD4FC /* CoreDataManager.swift */,
 				FD793EBA285EB003005CD4FC /* Fincel.xcdatamodeld */,
 				FD793EB5285EB003005CD4FC /* Preview Content */,
 			);
@@ -263,7 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD793EBC285EB003005CD4FC /* Fincel.xcdatamodeld in Sources */,
-				FD793EB9285EB003005CD4FC /* Persistence.swift in Sources */,
+				FD793EB9285EB003005CD4FC /* CoreDataManager.swift in Sources */,
 				FD793EC3285EBB81005CD4FC /* DashboardView.swift in Sources */,
 				FD793EC5285EC3FD005CD4FC /* Colors+.swift in Sources */,
 				FD793EB0285EAFFF005CD4FC /* FincelApp.swift in Sources */,
