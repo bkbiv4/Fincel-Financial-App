@@ -22,6 +22,7 @@
 		FD793ED9285EE975005CD4FC /* Fincel_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = FD793ED4285EE973005CD4FC /* Fincel_Widget.intentdefinition */; };
 		FD793EDC285EE975005CD4FC /* Fincel WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FD793ECB285EE973005CD4FC /* Fincel WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FD793EE4285FEB7B005CD4FC /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD793EE3285FEB7B005CD4FC /* CreateAccountView.swift */; };
+		FD793EE62860178D005CD4FC /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD793EE52860178D005CD4FC /* AccountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		FD793ED7285EE975005CD4FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD793EE1285FD099005CD4FC /* Fincel WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Fincel WidgetExtension.entitlements"; sourceTree = "<group>"; };
 		FD793EE3285FEB7B005CD4FC /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		FD793EE52860178D005CD4FC /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				FD793EE3285FEB7B005CD4FC /* CreateAccountView.swift */,
+				FD793EE52860178D005CD4FC /* AccountView.swift */,
 			);
 			path = Accounts;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				FD793EB9285EB003005CD4FC /* CoreDataManager.swift in Sources */,
 				FD793EC3285EBB81005CD4FC /* DashboardView.swift in Sources */,
 				FD793EC5285EC3FD005CD4FC /* Colors+.swift in Sources */,
+				FD793EE62860178D005CD4FC /* AccountView.swift in Sources */,
 				FD793EB0285EAFFF005CD4FC /* FincelApp.swift in Sources */,
 				FD793EE4285FEB7B005CD4FC /* CreateAccountView.swift in Sources */,
 				FD793ED9285EE975005CD4FC /* Fincel_Widget.intentdefinition in Sources */,

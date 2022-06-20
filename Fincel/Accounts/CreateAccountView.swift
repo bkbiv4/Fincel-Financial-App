@@ -12,14 +12,14 @@ struct CreateAccountView: View {
     
     @Environment(\.managedObjectContext) private var viewContext
     
-    @FetchRequest(entity: Account.entity(), sortDescriptors: []) private var accounts: FetchedResults<Account>
+    @FetchRequest(entity: Account.entity(), sortDescriptors: [])
+    private var accounts: FetchedResults<Account>
     
     @State var accountNameTextField: String = ""
-    @State var accountType: String = ""
-    @State var accountBalance: String = ""
+    @State var accountTypeTextField: String = ""
+    @State var accountBalanceTextField: String = ""
     
     var body: some View {
-
         NavigationView {
             VStack (spacing: 25) {
                 HStack () {
@@ -34,7 +34,7 @@ struct CreateAccountView: View {
                 HStack () {
                     Label("Account Type", image: "")
                         .frame(width: 150, height: 15, alignment: .leading)
-                    TextField("Account Type", text: $accountType)
+                    TextField("Account Type", text: $accountTypeTextField)
                         .padding(5)
                         .background(Color.gray.opacity(0.25).cornerRadius(10))
                 }
@@ -43,7 +43,7 @@ struct CreateAccountView: View {
                 HStack () {
                     Label("Account Balance", image: "")
                         .frame(width: 150, height: 15, alignment: .leading)
-                    TextField("Account Balance", text: $accountBalance)
+                    TextField("Account Balance", text: $accountBalanceTextField)
                         .padding(5)
                         .background(Color.gray.opacity(0.25).cornerRadius(10))
                 }
@@ -62,8 +62,11 @@ struct CreateAccountView: View {
         }
     }
     
+    
     private func createAccount() {
-        let account = ""
+        let newAccount = Account(context: viewContext)
+        newAccount.accountName = accountNameTextField
+        newAccount.accountType = accountTypeTextField
         
         do {
             try viewContext.save()
@@ -73,10 +76,12 @@ struct CreateAccountView: View {
         }
         
         
-        print("Saving The New Account")
+        print("Saving The New Account", newAccount)
         
         
     }
+    
+    
 }
 
 struct CreateAccountView_Previews: PreviewProvider {
