@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD112035286787200043E607 /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD112034286787200043E607 /* TransactionsView.swift */; };
 		FD793EB0285EAFFF005CD4FC /* FincelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD793EAF285EAFFF005CD4FC /* FincelApp.swift */; };
 		FD793EB4285EB003005CD4FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD793EB3285EB003005CD4FC /* Assets.xcassets */; };
 		FD793EB7285EB003005CD4FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD793EB6285EB003005CD4FC /* Preview Assets.xcassets */; };
@@ -50,6 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FD112034286787200043E607 /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
 		FD793EAC285EAFFF005CD4FC /* Fincel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fincel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD793EAF285EAFFF005CD4FC /* FincelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FincelApp.swift; sourceTree = "<group>"; };
 		FD793EB3285EB003005CD4FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		FD1120332866E6F40043E607 /* Transactions */ = {
 			isa = PBXGroup;
 			children = (
+				FD112034286787200043E607 /* TransactionsView.swift */,
 			);
 			path = Transactions;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				FD793EC3285EBB81005CD4FC /* DashboardView.swift in Sources */,
 				FD793EC5285EC3FD005CD4FC /* Colors+.swift in Sources */,
 				FD793EE62860178D005CD4FC /* AccountView.swift in Sources */,
+				FD112035286787200043E607 /* TransactionsView.swift in Sources */,
 				FD793EB0285EAFFF005CD4FC /* FincelApp.swift in Sources */,
 				FD793EE4285FEB7B005CD4FC /* CreateAccountView.swift in Sources */,
 				FD793ED9285EE975005CD4FC /* Fincel_Widget.intentdefinition in Sources */,

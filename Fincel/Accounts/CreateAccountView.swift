@@ -19,7 +19,7 @@ struct CreateAccountView: View {
     
     @State var accountNameTextField: String = ""
     @State var accountTypeTextField: String = ""
-    @State var accountBalanceTextField: Double = 0.0
+    @State var accountBalanceTextField: Double = 0.00
     
     let currncyFormatter: NumberFormatter = {
         let formatter = NumberFormatter()

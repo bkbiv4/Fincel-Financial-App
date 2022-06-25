@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct AccountView: View {
     
@@ -15,12 +16,16 @@ struct AccountView: View {
     private var accounts: FetchedResults<Account>
     
     @State var showCreateAccontView: Bool = false
+    @State var showAccountTransactionView: Bool = false
+    
+//    @State var maccount: Account?
     
     var body: some View {
         ZStack {
             NavigationView {
                 List {
                     ForEach(accounts) { account in
+//                        let maccount = account
                         HStack {
                             Text(account.accountName!)
                             
@@ -33,33 +38,44 @@ struct AccountView: View {
                                 .foregroundColor(Color.red)
                             }
                         }
+                        
                     }
+                        .onDelete(perform: { indexset in
+                            
+                        })
+                        .onTapGesture {
+                            print("Opening Transactions for")
+//                            self.accounts[i]
+//                            TransactionsView().account = maccount
+                            showAccountTransactionView.toggle()
+                            
+                        }
+                        
                 }
-                    .onTapGesture {
-                        print("Opening Transactions for")
-                    }
+                    
+                    .navigationTitle("Accounts")
+                    .navigationBarItems(trailing: Button("Add") { showCreateAccontView.toggle() } )
             }
-                .navigationTitle("Accounts")
-                .navigationBarItems(trailing: Button("Add") { showCreateAccontView.toggle() } )
-        }
-            .navigationViewStyle(.stack)
+                .navigationViewStyle(.stack)
+                .sheet(isPresented: $showCreateAccontView) {
+                    CreateAccountView()
+                
+                }
+                .sheet(isPresented: $showAccountTransactionView) {
+                    TransactionsView()
+                }
             
-//            if showCreateAccontView {
-//                CreateAccountView()
-//                    .frame(height: UIScreen.main.bounds.height * 0.5)
-//                    .transition(.move(edge: .bottom))
-//                    .animation(.easeInOut)
-        .sheet(isPresented: $showCreateAccontView) {
-            CreateAccountView()
         }
-            
+    }
+    
+    func deleteAccount(indexSet: IndexSet) {
+//        accounts.remove(atOffset: indexSet)
     }
     
     
-    private func createAccountScreen() {
-        
-        
-    }
+//    private func createAccountScreen() {
+//        
+//    }
 }
 
 struct AccountView_Previews: PreviewProvider {
