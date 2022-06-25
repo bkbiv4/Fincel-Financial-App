@@ -19,7 +19,13 @@ struct CreateAccountView: View {
     
     @State var accountNameTextField: String = ""
     @State var accountTypeTextField: String = ""
-    @State var accountBalanceTextField: String = ""
+    @State var accountBalanceTextField: Double = 0.0
+    
+    let currncyFormatter: NumberFormatter = {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        return formatter
+    }()
     
     var body: some View {
         NavigationView {
@@ -49,7 +55,7 @@ struct CreateAccountView: View {
                     HStack () {
                         Text("Account Balance")
                             .frame(width: 150, height: 15, alignment: .leading)
-                        TextField("Account Balance", text: $accountBalanceTextField)
+                        TextField("Account Balance", value: $accountBalanceTextField, format: .currency(code: "USD"))
                             .padding(5)
                             .background(Color.gray.opacity(0.25).cornerRadius(10))
                         Spacer()
@@ -84,6 +90,7 @@ struct CreateAccountView: View {
         
         newAccount.accountName = accountNameTextField
         newAccount.accountType = accountTypeTextField
+        newAccount.accountBalance = accountBalanceTextField
         
         do {
             try viewContext.save()

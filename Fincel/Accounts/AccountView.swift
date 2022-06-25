@@ -21,7 +21,13 @@ struct AccountView: View {
             NavigationView {
                 List {
                     ForEach(accounts) { account in
-                        Text(account.accountName!)
+                        HStack {
+                            Text(account.accountName!)
+                            Text(String(account.accountBalance))
+                        }
+                    }
+                    .onTapGesture {
+                        print("Opening Transactions for")
                     }
                 }
                 .navigationTitle("Accounts")

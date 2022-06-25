@@ -90,6 +90,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD1120332866E6F40043E607 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
 		FD793EA3285EAFFF005CD4FC = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +119,7 @@
 		FD793EAE285EAFFF005CD4FC /* Fincel */ = {
 			isa = PBXGroup;
 			children = (
+				FD1120332866E6F40043E607 /* Transactions */,
 				FD793ED4285EE973005CD4FC /* Fincel_Widget.intentdefinition */,
 				FD793EC2285EBB81005CD4FC /* DashboardView.swift */,
 				FD793EE2285FEB5F005CD4FC /* Accounts */,
