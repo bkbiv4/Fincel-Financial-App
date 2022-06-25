@@ -23,16 +23,25 @@ struct AccountView: View {
                     ForEach(accounts) { account in
                         HStack {
                             Text(account.accountName!)
-                            Text(String(account.accountBalance))
+                            
+                            if account.accountBalance >= 0 {
+                                Text("$ \(String(account.accountBalance))")
+                                .foregroundColor(Color.green)
+                            }
+                            else {
+                                Text("$ \(String(account.accountBalance))")
+                                .foregroundColor(Color.red)
+                            }
                         }
                     }
+                }
                     .onTapGesture {
                         print("Opening Transactions for")
                     }
-                }
+            }
                 .navigationTitle("Accounts")
                 .navigationBarItems(trailing: Button("Add") { showCreateAccontView.toggle() } )
-            }
+        }
             .navigationViewStyle(.stack)
             
 //            if showCreateAccontView {
@@ -40,7 +49,6 @@ struct AccountView: View {
 //                    .frame(height: UIScreen.main.bounds.height * 0.5)
 //                    .transition(.move(edge: .bottom))
 //                    .animation(.easeInOut)
-        }
         .sheet(isPresented: $showCreateAccontView) {
             CreateAccountView()
         }
