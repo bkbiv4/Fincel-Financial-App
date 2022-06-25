@@ -24,32 +24,36 @@ struct AccountView: View {
         ZStack {
             NavigationView {
                 List {
-                    ForEach(accounts) { account in
+                    ForEach(self.accounts.indices, id: \.self) { index in
 //                        let maccount = account
                         HStack {
-                            Text(account.accountName!)
+                            Text(accounts[index].accountName!)
                             
-                            if account.accountBalance >= 0 {
-                                Text("$ \(String(account.accountBalance))")
+                            if accounts[index].accountBalance >= 0 {
+                                Text("$ \(String(accounts[index].accountBalance))")
                                 .foregroundColor(Color.green)
                             }
                             else {
-                                Text("$ \(String(account.accountBalance))")
+                                Text("$ \(String(accounts[index].accountBalance))")
                                 .foregroundColor(Color.red)
                             }
                         }
+                        .onTapGesture {
+                            print("Opening Transactions for  \(String(accounts[index].accountBalance))")
+                            print(accounts[index])
+//                            self.accounts[i]
+                            TransactionsView().account = accounts[index]
+                            showAccountTransactionView.toggle()
+                            
+                        }
+                        
+                        let account = accounts[index]
                         
                     }
                         .onDelete(perform: { indexset in
                             
                         })
-                        .onTapGesture {
-                            print("Opening Transactions for")
-//                            self.accounts[i]
-//                            TransactionsView().account = maccount
-                            showAccountTransactionView.toggle()
-                            
-                        }
+                        
                         
                 }
                     

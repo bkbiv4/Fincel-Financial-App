@@ -9,10 +9,14 @@ import SwiftUI
 
 struct TransactionsView: View {
     
-    var account: Account?
+    @State var account: Account?
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List {}
+                .navigationTitle("Account: \(account)")
+        }
+        
     }
 }
 
