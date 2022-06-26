@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct TransactionsView: View {
     
@@ -14,7 +15,7 @@ struct TransactionsView: View {
     var body: some View {
         NavigationView {
             List {}
-                .navigationTitle("Account: \(account)")
+                .navigationTitle("Account: \(account?.accountName)")
         }
         
     }

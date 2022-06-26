@@ -13,7 +13,7 @@ struct AccountView: View {
     @Environment(\.managedObjectContext) private var viewContext
     
     @FetchRequest(entity: Account.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Account.accountName, ascending: true)])
-    private var accounts: FetchedResults<Account>
+    var accounts: FetchedResults<Account>
     
     @State var showCreateAccontView: Bool = false
     @State var showAccountTransactionView: Bool = false
@@ -46,8 +46,6 @@ struct AccountView: View {
                             showAccountTransactionView.toggle()
                             
                         }
-                        
-                        let account = accounts[index]
                         
                     }
                         .onDelete(perform: { indexset in
