@@ -14,9 +14,19 @@ struct TransactionsView: View {
     
     var body: some View {
         NavigationView {
-            List {}
-                .navigationTitle("Account: \(account?.accountName)")
+            List {
+                
+            }
+            .navigationBarItems(
+                trailing:
+                    Button(action: addTranscation) {
+                        Text("Add")
+                })                                 
         }
+        
+    }
+    
+    private func addTranscation() {
         
     }
 }

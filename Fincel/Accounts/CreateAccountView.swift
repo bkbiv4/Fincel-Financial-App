@@ -21,11 +21,11 @@ struct CreateAccountView: View {
     @State var accountTypeTextField: String = ""
     @State var accountBalanceTextField: Double = 0.00
     
-    let currncyFormatter: NumberFormatter = {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .currency
-        return formatter
-    }()
+//    let currncyFormatter: NumberFormatter = {
+//        let formatter = NumberFormatter()
+//        formatter.numberStyle = .currency
+//        return formatter
+//    }()
     
     var body: some View {
         NavigationView {

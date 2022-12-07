@@ -13,7 +13,7 @@ struct FincelApp: App {
 
     var body: some Scene {
         WindowGroup {
-            AccountView()
+            TransactionsView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
