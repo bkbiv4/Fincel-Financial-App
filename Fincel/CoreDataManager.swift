@@ -9,6 +9,16 @@ import CoreData
 
 struct CoreDataManager {
     static let shared = CoreDataManager()
+    
+//    let persistentContainer: NSPersistentContainer = {
+//        let container = NSPersistentContainer(name: "Fincel")
+//        container.loadPersistentStores { (storeDescription, err) in
+//            if let err = err {
+//                fatalError("Loading of store failed: \(err)")
+//            }
+//        }
+//        return container
+//    }()
 
     static var preview: CoreDataManager = {
         let result = CoreDataManager(inMemory: true)
@@ -49,5 +59,24 @@ struct CoreDataManager {
             }
         })
         container.viewContext.automaticallyMergesChangesFromParent = true
+    }
+    
+    func createBill(billName: String, billAmount: Double, billRepeat: String, billDate: Date) -> (Bill?, Error?) {
+        let context = container.viewContext
+        let bill = NSEntityDescription.insertNewObject(forEntityName: "Bill", into: context) as! Bill
+        
+        bill.setValue(billName, forKey: "billName")
+        bill.setValue(billAmount, forKey: "billAmount")
+        bill.setValue(billDate, forKey: "billDate")
+        bill.setValue(billRepeat, forKey: "billRepeat")
+        
+        do {
+            try context.save()
+            return (bill, nil)
+        } catch let err {
+            print("FAILED TO CREATE A NEW BILL", err)
+            return (nil, err)
+        }
+        
     }
 }

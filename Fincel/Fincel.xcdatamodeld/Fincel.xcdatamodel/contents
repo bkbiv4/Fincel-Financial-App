@@ -5,17 +5,16 @@
         <attribute name="accountName" optional="YES" attributeType="String"/>
         <attribute name="accountType" optional="YES" attributeType="String"/>
     </entity>
+    <entity name="Bill" representedClassName="Bill" syncable="YES" codeGenerationType="class">
+        <attribute name="billAmount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="billDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="billName" optional="YES" attributeType="String"/>
+        <attribute name="billRepeat" optional="YES" attributeType="String"/>
+    </entity>
     <entity name="CreditCard" representedClassName="CreditCard" syncable="YES" codeGenerationType="class">
         <attribute name="cardBalance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="cardInterest" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="cardLimit" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="cardName" optional="YES" attributeType="String"/>
-    </entity>
-    <entity name="Transaction" representedClassName="Transaction" syncable="YES" codeGenerationType="class">
-        <attribute name="trandactionAmount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="transactionDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
-        <attribute name="transactionName" optional="YES" attributeType="String"/>
-        <attribute name="transactionRepeat" optional="YES" attributeType="String"/>
-        <attribute name="transactionType" optional="YES" attributeType="String"/>
     </entity>
 </model>

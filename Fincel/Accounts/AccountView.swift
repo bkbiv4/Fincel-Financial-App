@@ -42,7 +42,7 @@ struct AccountView: View {
                             print("Opening Transactions for  \(String(accounts[index].accountBalance))")
                             print(accounts[index])
 //                            self.accounts[i]
-                            TransactionsView().account = accounts[index]
+                            BillsView().account = accounts[index]
                             showAccountTransactionView.toggle()
                             
                         }
@@ -64,7 +64,7 @@ struct AccountView: View {
                 
                 }
                 .sheet(isPresented: $showAccountTransactionView) {
-                    TransactionsView()
+                    BillsView()
                 }
             
         }
