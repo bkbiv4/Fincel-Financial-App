@@ -87,7 +87,7 @@ struct CreateBillsView: View {
         case "Weekly":
             print()
         case "Biweekly":
-            for x in 0...72 {
+            for x in 0...24 {
                 dateComponent.weekOfYear = (x*2)
                 let newDate = Calendar.current.date(byAdding: dateComponent, to: billDate)!
                 let tuple = CoreDataManager.shared.createBill(billName: billNameTextField, billAmount: billAmountTextField, billRepeat: billRepeatOptions[billRepeatOptionIndex], billDate: newDate)

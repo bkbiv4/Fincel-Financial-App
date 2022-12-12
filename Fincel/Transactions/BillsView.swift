@@ -14,30 +14,60 @@ struct BillsView: View {
     @State var showCreateBillView: Bool = false
     
     
+    
     @FetchRequest(entity: Bill.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Bill.billDate, ascending: true)])
+//    @FetchRequest(entity: Bill.entity(), sortDescriptors: [])
     var bills: FetchedResults<Bill>
     
+    func grabBillMonths() -> [String] {
+        
+        var billMonths : [String] = []
+        
+        for x in bills {
+            let date = x.billDate?.formatted(.dateTime.month(.wide).year()) ?? ""
+            billMonths.append(date)
+        }
+
+
+//        print(typeof(Array(Set(billMonths))))
+        print(type(of: Array(Set(billMonths))))
+
+//        billMonths = Array(Set(billMonths))
+        return billMonths
+    }
     
-    
-    let dateFormatter = DateFormatter()
     
     var body: some View {
-        printBills()
+//        let _ = self.grabBillMonths()
+        let billMonths = grabBillMonths()
+        
+//        for x in bills {
+//
+//        }
+        
         NavigationView {
-            
             List {
-                
-                ForEach(self.bills.indices, id:\.self) { index in
-                    HStack {
-                        let billDate = bills[index].billDate?.formatted()
-                        
-                        
-                        Text(bills[index].billName!)
-                        Text(billDate ?? "")
+                ForEach(self.bills, id: \.self) { bill in
+                    Section(header: Text(bill.billDate?.formatted(.dateTime.month(.wide).year()) ?? "")) {
+//                        HStack {
+//                            Text(bill.billDate?.formatted() ?? "")
+//                            //                            Text(bill.billAmount)
+//                        }
                     }
-                    
                 }
-            }
+            }.listStyle(InsetGroupedListStyle())
+            
+//                List {
+//                    ForEach(self.bills.indices, id:\.self) { index in
+//                        let _ = print(bills[index].billDate?.formatted(.dateTime.month(.wide).year()))
+//                        HStack {
+//                            let billDate = bills[index].billDate?.formatted()
+//
+//                            Text(bills[index].billName!)
+//                            Text(billDate ?? "")
+//                        }
+//                    }
+//                }
             .navigationBarItems(
                 trailing:
                     Button("Add") {
@@ -48,6 +78,7 @@ struct BillsView: View {
         .sheet(isPresented: $showCreateBillView) {
             CreateBillsView()
         }
+        
     }
 }
 
