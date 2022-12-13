@@ -15,8 +15,8 @@ struct BillsView: View {
     
     
     
-    @FetchRequest(entity: Bill.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Bill.billDate, ascending: true)])
-//    @FetchRequest(entity: Bill.entity(), sortDescriptors: [])
+//    @FetchRequest(entity: Bill.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Bill.billDate, ascending: true)])
+    @FetchRequest(entity: Bill.entity(), sortDescriptors: [NSSortDescriptor(key: "billDate", ascending: true)])
     var bills: FetchedResults<Bill>
     
     func grabBillMonths() -> [String] {
@@ -27,35 +27,40 @@ struct BillsView: View {
             let date = x.billDate?.formatted(.dateTime.month(.wide).year()) ?? ""
             billMonths.append(date)
         }
-
-
-//        print(typeof(Array(Set(billMonths))))
-        print(type(of: Array(Set(billMonths))))
-
-//        billMonths = Array(Set(billMonths))
-        return billMonths
+        
+        return billMonths.uniqued()
     }
     
     
+    
     var body: some View {
-//        let _ = self.grabBillMonths()
         let billMonths = grabBillMonths()
-        
-//        for x in bills {
-//
-//        }
+//        let _ = print(bills)
         
         NavigationView {
             List {
-                ForEach(self.bills, id: \.self) { bill in
-                    Section(header: Text(bill.billDate?.formatted(.dateTime.month(.wide).year()) ?? "")) {
-//                        HStack {
-//                            Text(bill.billDate?.formatted() ?? "")
-//                            //                            Text(bill.billAmount)
-//                        }
+                ForEach(billMonths, id: \.self) { billDate in
+                    Section(header: Text(billDate)) {
+                        ForEach(self.bills, id: \.self) { bill in
+                            HStack {
+                                Text(bill.billName ?? "")
+                                Text(bill.billDate?.formatted(.dateTime.month(.wide).day().year()) ?? "")
+                            }
+                        }
                     }
                 }
-            }.listStyle(InsetGroupedListStyle())
+                
+                
+                
+//                ForEach(self.bills, id: \.self) { bill in
+//                    Section(header: Text(bill.billDate?.formatted(.dateTime.month(.wide).year()) ?? "")) {
+////                        HStack {
+////                            Text(bill.billDate?.formatted() ?? "")
+////                            //                            Text(bill.billAmount)
+////                        }
+//                    }
+//                }
+            }
             
 //                List {
 //                    ForEach(self.bills.indices, id:\.self) { index in

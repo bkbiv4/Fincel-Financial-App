@@ -11,6 +11,7 @@
 		FD1C5E8329405F3000EEFB83 /* CreateBillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1C5E8229405F3000EEFB83 /* CreateBillsView.swift */; };
 		FD3564A3290436BF005D3111 /* Credit Card Payments.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3564A2290436BF005D3111 /* Credit Card Payments.swift */; };
 		FD3564A529043B86005D3111 /* CreditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3564A429043B86005D3111 /* CreditView.swift */; };
+		FD6C0CF0294745DB00F2E47B /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6C0CEF294745DB00F2E47B /* Array+.swift */; };
 		FD793EB0285EAFFF005CD4FC /* FincelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD793EAF285EAFFF005CD4FC /* FincelApp.swift */; };
 		FD793EB4285EB003005CD4FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD793EB3285EB003005CD4FC /* Assets.xcassets */; };
 		FD793EB7285EB003005CD4FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD793EB6285EB003005CD4FC /* Preview Assets.xcassets */; };
@@ -60,6 +61,7 @@
 		FD1C5E8229405F3000EEFB83 /* CreateBillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBillsView.swift; sourceTree = "<group>"; };
 		FD3564A2290436BF005D3111 /* Credit Card Payments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Credit Card Payments.swift"; sourceTree = "<group>"; };
 		FD3564A429043B86005D3111 /* CreditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditView.swift; sourceTree = "<group>"; };
+		FD6C0CEF294745DB00F2E47B /* Array+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
 		FD793EAC285EAFFF005CD4FC /* Fincel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fincel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD793EAF285EAFFF005CD4FC /* FincelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FincelApp.swift; sourceTree = "<group>"; };
 		FD793EB3285EB003005CD4FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -122,6 +124,14 @@
 			path = "Credit Card Section";
 			sourceTree = "<group>";
 		};
+		FD6C0CEE294745BF00F2E47B /* Array Extentsions */ = {
+			isa = PBXGroup;
+			children = (
+				FD6C0CEF294745DB00F2E47B /* Array+.swift */,
+			);
+			path = "Array Extentsions";
+			sourceTree = "<group>";
+		};
 		FD793EA3285EAFFF005CD4FC = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +154,7 @@
 		FD793EAE285EAFFF005CD4FC /* Fincel */ = {
 			isa = PBXGroup;
 			children = (
+				FD6C0CEE294745BF00F2E47B /* Array Extentsions */,
 				FD3564A129043695005D3111 /* Credit Card Section */,
 				FD1120332866E6F40043E607 /* Transactions */,
 				FD793ED4285EE973005CD4FC /* Fincel_Widget.intentdefinition */,
@@ -301,6 +312,7 @@
 				FD793EBC285EB003005CD4FC /* Fincel.xcdatamodeld in Sources */,
 				FD793EB9285EB003005CD4FC /* CoreDataManager.swift in Sources */,
 				FDDB50FB29048111006A1E4F /* Add Credit Card View.swift in Sources */,
+				FD6C0CF0294745DB00F2E47B /* Array+.swift in Sources */,
 				FD793EC3285EBB81005CD4FC /* DashboardView.swift in Sources */,
 				FD793EC5285EC3FD005CD4FC /* Colors+.swift in Sources */,
 				FD793EE62860178D005CD4FC /* AccountView.swift in Sources */,
