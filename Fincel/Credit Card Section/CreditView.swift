@@ -29,7 +29,7 @@ struct CreditView: View {
 //                Rectangle()
 //                    .size(CGSize(width: 10, height: 10))
 //                    .foregroundColor(.red)
-                Text("Fill Up Space with the view")
+//                Text("Fill Up Space with the view")
                 List {
                     ForEach(self.creditCards.indices, id: \.self) { index in
                         HStack {

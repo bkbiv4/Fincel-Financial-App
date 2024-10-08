@@ -104,13 +104,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FD1120332866E6F40043E607 /* Transactions */ = {
+		FD1120332866E6F40043E607 /* Bill Section */ = {
 			isa = PBXGroup;
 			children = (
 				FD112034286787200043E607 /* BillsView.swift */,
 				FD1C5E8229405F3000EEFB83 /* CreateBillsView.swift */,
 			);
-			path = Transactions;
+			path = "Bill Section";
 			sourceTree = "<group>";
 		};
 		FD3564A129043695005D3111 /* Credit Card Section */ = {
@@ -155,11 +155,11 @@
 			isa = PBXGroup;
 			children = (
 				FD6C0CEE294745BF00F2E47B /* Array Extentsions */,
+				FD793EE2285FEB5F005CD4FC /* Accounts */,
 				FD3564A129043695005D3111 /* Credit Card Section */,
-				FD1120332866E6F40043E607 /* Transactions */,
+				FD1120332866E6F40043E607 /* Bill Section */,
 				FD793ED4285EE973005CD4FC /* Fincel_Widget.intentdefinition */,
 				FD793EC2285EBB81005CD4FC /* DashboardView.swift */,
-				FD793EE2285FEB5F005CD4FC /* Accounts */,
 				FD793EC6285EE88A005CD4FC /* Fincel.entitlements */,
 				FD793EC4285EC3FD005CD4FC /* Colors+.swift */,
 				FD793EAF285EAFFF005CD4FC /* FincelApp.swift */,
@@ -254,7 +254,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					FD793EAB285EAFFF005CD4FC = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -382,6 +382,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -442,6 +443,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
